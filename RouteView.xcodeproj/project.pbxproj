@@ -16,6 +16,22 @@
 		A390C11616D48A4D00A2CF1B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A390C11516D48A4D00A2CF1B /* Default.png */; };
 		A390C11816D48A4D00A2CF1B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A390C11716D48A4D00A2CF1B /* Default@2x.png */; };
 		A390C11A16D48A4D00A2CF1B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A390C11916D48A4D00A2CF1B /* Default-568h@2x.png */; };
+		A390C12516D49C4500A2CF1B /* RegionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C12416D49C4500A2CF1B /* RegionsViewController.m */; };
+		A390C12716D49C6E00A2CF1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A390C12616D49C6E00A2CF1B /* Main.storyboard */; };
+		A390C12A16D49D8D00A2CF1B /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C12916D49D8D00A2CF1B /* MainNavigationViewController.m */; };
+		A390C14616D49E4900A2CF1B /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C13116D49E4900A2CF1B /* UIColor+Hex.m */; };
+		A390C14716D49E4900A2CF1B /* UIView+InnerShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C13316D49E4900A2CF1B /* UIView+InnerShadow.m */; };
+		A390C14816D49E4900A2CF1B /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C13516D49E4900A2CF1B /* UIView+Positioning.m */; };
+		A390C14916D49E4900A2CF1B /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C13716D49E4900A2CF1B /* UIView+Size.m */; };
+		A390C14A16D49E4900A2CF1B /* JMSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C13A16D49E4900A2CF1B /* JMSelectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A390C14B16D49E4900A2CF1B /* JMTabContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C13D16D49E4900A2CF1B /* JMTabContainer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A390C14C16D49E4900A2CF1B /* JMTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C13F16D49E4900A2CF1B /* JMTabItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A390C14D16D49E4900A2CF1B /* JMTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C14116D49E4900A2CF1B /* JMTabView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A390C14E16D49E4900A2CF1B /* BarBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C14416D49E4900A2CF1B /* BarBackgroundLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A390C15116D49EEB00A2CF1B /* NavigationTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C15016D49EEB00A2CF1B /* NavigationTabItem.m */; };
+		A390C15316D49F8800A2CF1B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A390C15216D49F8800A2CF1B /* QuartzCore.framework */; };
+		A390C15816D4A01400A2CF1B /* NavigationBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C15516D4A01400A2CF1B /* NavigationBackgroundLayer.m */; };
+		A390C15916D4A01400A2CF1B /* NavigationSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C15716D4A01400A2CF1B /* NavigationSelectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +48,38 @@
 		A390C11516D48A4D00A2CF1B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A390C11716D48A4D00A2CF1B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A390C11916D48A4D00A2CF1B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A390C12316D49C4500A2CF1B /* RegionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegionsViewController.h; path = UI/RegionsViewController.h; sourceTree = "<group>"; };
+		A390C12416D49C4500A2CF1B /* RegionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegionsViewController.m; path = UI/RegionsViewController.m; sourceTree = "<group>"; };
+		A390C12616D49C6E00A2CF1B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Main.storyboard; sourceTree = "<group>"; };
+		A390C12816D49D8D00A2CF1B /* MainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainNavigationViewController.h; path = UI/MainNavigationViewController.h; sourceTree = "<group>"; };
+		A390C12916D49D8D00A2CF1B /* MainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainNavigationViewController.m; path = UI/MainNavigationViewController.m; sourceTree = "<group>"; };
+		A390C13016D49E4900A2CF1B /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		A390C13116D49E4900A2CF1B /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		A390C13216D49E4900A2CF1B /* UIView+InnerShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+InnerShadow.h"; sourceTree = "<group>"; };
+		A390C13316D49E4900A2CF1B /* UIView+InnerShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+InnerShadow.m"; sourceTree = "<group>"; };
+		A390C13416D49E4900A2CF1B /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
+		A390C13516D49E4900A2CF1B /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
+		A390C13616D49E4900A2CF1B /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
+		A390C13716D49E4900A2CF1B /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
+		A390C13916D49E4900A2CF1B /* JMSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSelectionView.h; sourceTree = "<group>"; };
+		A390C13A16D49E4900A2CF1B /* JMSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSelectionView.m; sourceTree = "<group>"; };
+		A390C13B16D49E4900A2CF1B /* JMTabConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTabConstants.h; sourceTree = "<group>"; };
+		A390C13C16D49E4900A2CF1B /* JMTabContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTabContainer.h; sourceTree = "<group>"; };
+		A390C13D16D49E4900A2CF1B /* JMTabContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTabContainer.m; sourceTree = "<group>"; };
+		A390C13E16D49E4900A2CF1B /* JMTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTabItem.h; sourceTree = "<group>"; };
+		A390C13F16D49E4900A2CF1B /* JMTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTabItem.m; sourceTree = "<group>"; };
+		A390C14016D49E4900A2CF1B /* JMTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTabView.h; sourceTree = "<group>"; };
+		A390C14116D49E4900A2CF1B /* JMTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTabView.m; sourceTree = "<group>"; };
+		A390C14316D49E4900A2CF1B /* BarBackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarBackgroundLayer.h; sourceTree = "<group>"; };
+		A390C14416D49E4900A2CF1B /* BarBackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarBackgroundLayer.m; sourceTree = "<group>"; };
+		A390C14516D49E4900A2CF1B /* JMTabView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JMTabView-Prefix.pch"; sourceTree = "<group>"; };
+		A390C14F16D49EEB00A2CF1B /* NavigationTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationTabItem.h; path = UI/NavigationTabItem.h; sourceTree = "<group>"; };
+		A390C15016D49EEB00A2CF1B /* NavigationTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationTabItem.m; path = UI/NavigationTabItem.m; sourceTree = "<group>"; };
+		A390C15216D49F8800A2CF1B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A390C15416D4A01400A2CF1B /* NavigationBackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationBackgroundLayer.h; path = UI/NavigationBackgroundLayer.h; sourceTree = "<group>"; };
+		A390C15516D4A01400A2CF1B /* NavigationBackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationBackgroundLayer.m; path = UI/NavigationBackgroundLayer.m; sourceTree = "<group>"; };
+		A390C15616D4A01400A2CF1B /* NavigationSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationSelectionView.h; path = UI/NavigationSelectionView.h; sourceTree = "<group>"; };
+		A390C15716D4A01400A2CF1B /* NavigationSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationSelectionView.m; path = UI/NavigationSelectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A390C15316D49F8800A2CF1B /* QuartzCore.framework in Frameworks */,
 				A390C10416D48A4D00A2CF1B /* UIKit.framework in Frameworks */,
 				A390C10616D48A4D00A2CF1B /* Foundation.framework in Frameworks */,
 				A390C10816D48A4D00A2CF1B /* CoreGraphics.framework in Frameworks */,
@@ -54,6 +103,7 @@
 				A390C10916D48A4D00A2CF1B /* RouteView */,
 				A390C10216D48A4D00A2CF1B /* Frameworks */,
 				A390C10116D48A4D00A2CF1B /* Products */,
+				A390C15A16D4A25400A2CF1B /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +118,7 @@
 		A390C10216D48A4D00A2CF1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A390C15216D49F8800A2CF1B /* QuartzCore.framework */,
 				A390C10316D48A4D00A2CF1B /* UIKit.framework */,
 				A390C10516D48A4D00A2CF1B /* Foundation.framework */,
 				A390C10716D48A4D00A2CF1B /* CoreGraphics.framework */,
@@ -78,6 +129,7 @@
 		A390C10916D48A4D00A2CF1B /* RouteView */ = {
 			isa = PBXGroup;
 			children = (
+				A390C12016D4956700A2CF1B /* UI */,
 				A390C11216D48A4D00A2CF1B /* AppDelegate.h */,
 				A390C11316D48A4D00A2CF1B /* AppDelegate.m */,
 				A390C10A16D48A4D00A2CF1B /* Supporting Files */,
@@ -97,6 +149,92 @@
 				A390C11916D48A4D00A2CF1B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A390C12016D4956700A2CF1B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A390C15416D4A01400A2CF1B /* NavigationBackgroundLayer.h */,
+				A390C15516D4A01400A2CF1B /* NavigationBackgroundLayer.m */,
+				A390C15616D4A01400A2CF1B /* NavigationSelectionView.h */,
+				A390C15716D4A01400A2CF1B /* NavigationSelectionView.m */,
+				A390C14F16D49EEB00A2CF1B /* NavigationTabItem.h */,
+				A390C15016D49EEB00A2CF1B /* NavigationTabItem.m */,
+				A390C12616D49C6E00A2CF1B /* Main.storyboard */,
+				A390C12316D49C4500A2CF1B /* RegionsViewController.h */,
+				A390C12416D49C4500A2CF1B /* RegionsViewController.m */,
+				A390C12816D49D8D00A2CF1B /* MainNavigationViewController.h */,
+				A390C12916D49D8D00A2CF1B /* MainNavigationViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A390C12D16D49E4900A2CF1B /* JMTabView */ = {
+			isa = PBXGroup;
+			children = (
+				A390C12E16D49E4900A2CF1B /* Classes */,
+				A390C14516D49E4900A2CF1B /* JMTabView-Prefix.pch */,
+			);
+			name = JMTabView;
+			path = vendor/JMTabView/JMTabView;
+			sourceTree = "<group>";
+		};
+		A390C12E16D49E4900A2CF1B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A390C12F16D49E4900A2CF1B /* Categories */,
+				A390C13816D49E4900A2CF1B /* Subviews */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A390C12F16D49E4900A2CF1B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A390C13016D49E4900A2CF1B /* UIColor+Hex.h */,
+				A390C13116D49E4900A2CF1B /* UIColor+Hex.m */,
+				A390C13216D49E4900A2CF1B /* UIView+InnerShadow.h */,
+				A390C13316D49E4900A2CF1B /* UIView+InnerShadow.m */,
+				A390C13416D49E4900A2CF1B /* UIView+Positioning.h */,
+				A390C13516D49E4900A2CF1B /* UIView+Positioning.m */,
+				A390C13616D49E4900A2CF1B /* UIView+Size.h */,
+				A390C13716D49E4900A2CF1B /* UIView+Size.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A390C13816D49E4900A2CF1B /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				A390C13916D49E4900A2CF1B /* JMSelectionView.h */,
+				A390C13A16D49E4900A2CF1B /* JMSelectionView.m */,
+				A390C13B16D49E4900A2CF1B /* JMTabConstants.h */,
+				A390C13C16D49E4900A2CF1B /* JMTabContainer.h */,
+				A390C13D16D49E4900A2CF1B /* JMTabContainer.m */,
+				A390C13E16D49E4900A2CF1B /* JMTabItem.h */,
+				A390C13F16D49E4900A2CF1B /* JMTabItem.m */,
+				A390C14016D49E4900A2CF1B /* JMTabView.h */,
+				A390C14116D49E4900A2CF1B /* JMTabView.m */,
+				A390C14216D49E4900A2CF1B /* Layers */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		A390C14216D49E4900A2CF1B /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				A390C14316D49E4900A2CF1B /* BarBackgroundLayer.h */,
+				A390C14416D49E4900A2CF1B /* BarBackgroundLayer.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		A390C15A16D4A25400A2CF1B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A390C12D16D49E4900A2CF1B /* JMTabView */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +292,7 @@
 				A390C11616D48A4D00A2CF1B /* Default.png in Resources */,
 				A390C11816D48A4D00A2CF1B /* Default@2x.png in Resources */,
 				A390C11A16D48A4D00A2CF1B /* Default-568h@2x.png in Resources */,
+				A390C12716D49C6E00A2CF1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +305,20 @@
 			files = (
 				A390C11016D48A4D00A2CF1B /* main.m in Sources */,
 				A390C11416D48A4D00A2CF1B /* AppDelegate.m in Sources */,
+				A390C12516D49C4500A2CF1B /* RegionsViewController.m in Sources */,
+				A390C12A16D49D8D00A2CF1B /* MainNavigationViewController.m in Sources */,
+				A390C14616D49E4900A2CF1B /* UIColor+Hex.m in Sources */,
+				A390C14716D49E4900A2CF1B /* UIView+InnerShadow.m in Sources */,
+				A390C14816D49E4900A2CF1B /* UIView+Positioning.m in Sources */,
+				A390C14916D49E4900A2CF1B /* UIView+Size.m in Sources */,
+				A390C14A16D49E4900A2CF1B /* JMSelectionView.m in Sources */,
+				A390C14B16D49E4900A2CF1B /* JMTabContainer.m in Sources */,
+				A390C14C16D49E4900A2CF1B /* JMTabItem.m in Sources */,
+				A390C14D16D49E4900A2CF1B /* JMTabView.m in Sources */,
+				A390C14E16D49E4900A2CF1B /* BarBackgroundLayer.m in Sources */,
+				A390C15116D49EEB00A2CF1B /* NavigationTabItem.m in Sources */,
+				A390C15816D4A01400A2CF1B /* NavigationBackgroundLayer.m in Sources */,
+				A390C15916D4A01400A2CF1B /* NavigationSelectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +435,7 @@
 				A390C11F16D48A4D00A2CF1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
