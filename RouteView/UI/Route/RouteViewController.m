@@ -27,7 +27,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  [self.navigationController.navigationBar setHidden:YES];
+//  [self.navigationController.navigationBar setHidden:YES];
 	// Do any additional setup after loading the view.
   _searchView = [[NiftySearchView alloc] initWithFrame:CGRectMake(0, -76, 320, 76)];
   _searchView.delegate = (id)self;
@@ -56,7 +56,11 @@
                    }];
 }
 - (void)viewDidAppear:(BOOL)animated {
-  [self.navigationController.navigationBar setHidden:YES];
+//  [self.navigationController.navigationBar setHidden:YES];
+//  CGRect frame = _searchView.frame;
+//  frame.origin.x = 0;
+//  frame.origin.y = 0;
+//  _searchView.frame = frame;
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,4 +73,13 @@
   [self performSegueWithIdentifier:@"PushTrafficCamsView" sender:self];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([segue.identifier isEqualToString:@"PushTrafficCamsView"]) {
+    CamsViewController *cvc = [segue destinationViewController];
+    NSString *region = @"Airport";
+    //    NSDictionary *region = [[_regionsTableModel regions] objectForKey:regionKey];
+    [cvc setRegion:region];
+    [cvc setTitle:@"Your Route"];
+  }
+}
 @end

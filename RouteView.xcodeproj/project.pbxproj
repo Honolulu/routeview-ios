@@ -65,6 +65,8 @@
 		A3B990B016D546B700F614A4 /* CamsCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B990AF16D546B700F614A4 /* CamsCollectionModel.m */; };
 		A3B990B216D549DE00F614A4 /* CamListingViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B990B116D549DE00F614A4 /* CamListingViewCell.xib */; };
 		A3B990B516D54A3A00F614A4 /* CamListingViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B990B416D54A3900F614A4 /* CamListingViewCell.m */; };
+		A3B990B816D560A000F614A4 /* 06-map-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B990B616D560A000F614A4 /* 06-map-pin.png */; };
+		A3B990B916D560A000F614A4 /* 06-map-pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B990B716D560A000F614A4 /* 06-map-pin@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +167,8 @@
 		A3B990B116D549DE00F614A4 /* CamListingViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CamListingViewCell.xib; path = Cams/CamListingViewCell.xib; sourceTree = "<group>"; };
 		A3B990B316D54A3900F614A4 /* CamListingViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CamListingViewCell.h; path = Cams/CamListingViewCell.h; sourceTree = "<group>"; };
 		A3B990B416D54A3900F614A4 /* CamListingViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CamListingViewCell.m; path = Cams/CamListingViewCell.m; sourceTree = "<group>"; };
+		A3B990B616D560A000F614A4 /* 06-map-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "06-map-pin.png"; path = "glyphish_pro-icons-gray/06-map-pin.png"; sourceTree = "<group>"; };
+		A3B990B716D560A000F614A4 /* 06-map-pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "06-map-pin@2x.png"; path = "glyphish_pro-icons-gray/06-map-pin@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,8 @@
 		09A66EC716D4BDC9000851C0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A3B990B616D560A000F614A4 /* 06-map-pin.png */,
+				A3B990B716D560A000F614A4 /* 06-map-pin@2x.png */,
 				A3B9908F16D52DA600F614A4 /* 74-location.png */,
 				A3B9909016D52DA600F614A4 /* 74-location@2x.png */,
 				A3B9908B16D52D6B00F614A4 /* 07-map-marker.png */,
@@ -528,6 +534,8 @@
 				A3B990A116D5385300F614A4 /* UISearchBarBookmarksPressed.png in Resources */,
 				A3B990A216D5385300F614A4 /* UISearchBarBookmarksPressed@2x.png in Resources */,
 				A3B990B216D549DE00F614A4 /* CamListingViewCell.xib in Resources */,
+				A3B990B816D560A000F614A4 /* 06-map-pin.png in Resources */,
+				A3B990B916D560A000F614A4 /* 06-map-pin@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

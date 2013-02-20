@@ -25,15 +25,16 @@
 
 - (void)updateFromRemote:(NSString *)region {
   NSLog(@"Region: %@", region);
-  if (region) {
-    RouteViewRemote *rvr = [RouteViewRemote sharedInstance];
-    [rvr camsForRegion:region onCompletion:^(NSDictionary *dictionary) {
-      NSLog(@"Cameras for %@: %@", region, dictionary);
-      _cams = dictionary;
-      
-      [[NSNotificationCenter defaultCenter] postNotificationName:@"CamsCollectionReload" object:nil];
-    } onError:^(NSError *error) {
-      NSLog(@"Error loading cameras for %@", region);
-    }];
-  }}
+  //  if (region) {
+  RouteViewRemote *rvr = [RouteViewRemote sharedInstance];
+  [rvr camsForRegion:region onCompletion:^(NSDictionary *dictionary) {
+    NSLog(@"Cameras for %@: %@", region, dictionary);
+    _cams = dictionary;
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"CamsCollectionReload" object:nil];
+  } onError:^(NSError *error) {
+    NSLog(@"Error loading cameras for %@", region);
+  }];
+}
+
 @end

@@ -36,24 +36,23 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="562990623">
+					<object class="IBUIImageView" id="816001701">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{148, 111}</string>
+						<string key="NSFrameSize">{155, 111}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="669886935"/>
+						<reference key="NSNextKeyView" ref="10793765"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
-					<object class="IBUIActivityIndicatorView" id="669886935">
+					<object class="IBUIActivityIndicatorView" id="10793765">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrame">{{67, 45}, {20, 20}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -63,7 +62,7 @@
 				<string key="NSFrameSize">{155, 110}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="562990623"/>
+				<reference key="NSNextKeyView" ref="816001701"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -84,7 +83,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">camImageView</string>
 						<reference key="source" ref="191373211"/>
-						<reference key="destination" ref="562990623"/>
+						<reference key="destination" ref="816001701"/>
 					</object>
 					<int key="connectionID">5</int>
 				</object>
@@ -92,7 +91,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">camImageActivityIndicatorView</string>
 						<reference key="source" ref="191373211"/>
-						<reference key="destination" ref="669886935"/>
+						<reference key="destination" ref="10793765"/>
 					</object>
 					<int key="connectionID">8</int>
 				</object>
@@ -109,8 +108,8 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="669886935"/>
-							<reference ref="562990623"/>
+							<reference ref="10793765"/>
+							<reference ref="816001701"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -127,12 +126,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="562990623"/>
+						<reference key="object" ref="816001701"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">7</int>
-						<reference key="object" ref="669886935"/>
+						<reference key="object" ref="10793765"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>

@@ -22,7 +22,12 @@
 -(MKNetworkOperation*) camsForRegion:(NSString *)region
                         onCompletion:(DictionaryResponseBlock)completionBlock
                              onError:(MKNKErrorBlock)errorBlock {
-  region = [region stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+  if (region) {
+    region = [region stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+  }
+  else {
+    region = @"Airport";
+  }
   MKNetworkOperation *op = [self operationWithPath:[NSString stringWithFormat:@"regions/%@/cams", region]
                                             params:nil
                                         httpMethod:@"GET"];
@@ -39,8 +44,8 @@
 }
 
 -(MKNetworkOperation*) camForURL:(NSString *)camURL
-                        onCompletion:(DataResponseBlock)completionBlock
-                             onError:(MKNKErrorBlock)errorBlock {
+                    onCompletion:(DataResponseBlock)completionBlock
+                         onError:(MKNKErrorBlock)errorBlock {
   MKNetworkOperation *op = [self operationWithPath:[NSString stringWithFormat:@"camera%@", camURL]
                                             params:nil
                                         httpMethod:@"GET"];
@@ -61,7 +66,7 @@
 + (RouteViewRemote *)sharedInstance {
   static RouteViewRemote *sharedInstance = nil;
   if (sharedInstance == nil) {
-//    NSDictionary *headers = [[NSDictionary alloc] initWithObjectsAndKeys:@"application/json", @"Accept", nil];
+    //    NSDictionary *headers = [[NSDictionary alloc] initWithObjectsAndKeys:@"application/json", @"Accept", nil];
     sharedInstance = [[RouteViewRemote alloc] initWithHostName:RV_HOST customHeaderFields:nil];
   }
   return sharedInstance;

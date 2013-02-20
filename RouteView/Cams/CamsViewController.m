@@ -23,6 +23,10 @@
   [_camsCollectionModel updateFromRemote:_region];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+  [self.navigationController.navigationBar setHidden:NO];
+}
+
 - (void)didReceiveMemoryWarning
 {
   [super didReceiveMemoryWarning];
