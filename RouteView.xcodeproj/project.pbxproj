@@ -19,7 +19,6 @@
 		A390C11616D48A4D00A2CF1B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A390C11516D48A4D00A2CF1B /* Default.png */; };
 		A390C11816D48A4D00A2CF1B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A390C11716D48A4D00A2CF1B /* Default@2x.png */; };
 		A390C11A16D48A4D00A2CF1B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A390C11916D48A4D00A2CF1B /* Default-568h@2x.png */; };
-		A390C12516D49C4500A2CF1B /* RegionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C12416D49C4500A2CF1B /* RegionsViewController.m */; };
 		A390C12716D49C6E00A2CF1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A390C12616D49C6E00A2CF1B /* Main.storyboard */; };
 		A390C12A16D49D8D00A2CF1B /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C12916D49D8D00A2CF1B /* MainNavigationViewController.m */; };
 		A390C14616D49E4900A2CF1B /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C13116D49E4900A2CF1B /* UIColor+Hex.m */; };
@@ -35,6 +34,37 @@
 		A390C15316D49F8800A2CF1B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A390C15216D49F8800A2CF1B /* QuartzCore.framework */; };
 		A390C15816D4A01400A2CF1B /* NavigationBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C15516D4A01400A2CF1B /* NavigationBackgroundLayer.m */; };
 		A390C15916D4A01400A2CF1B /* NavigationSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A390C15716D4A01400A2CF1B /* NavigationSelectionView.m */; };
+		A3B9907116D5229800F614A4 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9905D16D5229800F614A4 /* NSData+MKBase64.m */; };
+		A3B9907216D5229800F614A4 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9905F16D5229800F614A4 /* NSDate+RFC1123.m */; };
+		A3B9907316D5229800F614A4 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9906116D5229800F614A4 /* NSDictionary+RequestEncoding.m */; };
+		A3B9907416D5229800F614A4 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9906316D5229800F614A4 /* NSString+MKNetworkKitAdditions.m */; };
+		A3B9907516D5229800F614A4 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9906516D5229800F614A4 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		A3B9907716D5229800F614A4 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9906916D5229800F614A4 /* MKNetworkEngine.m */; };
+		A3B9907816D5229800F614A4 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9906C16D5229800F614A4 /* MKNetworkOperation.m */; };
+		A3B9907916D5229800F614A4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9906F16D5229800F614A4 /* Reachability.m */; };
+		A3B9907B16D523D500F614A4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B9907A16D523D500F614A4 /* SystemConfiguration.framework */; };
+		A3B9907D16D523DE00F614A4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B9907C16D523DE00F614A4 /* CFNetwork.framework */; };
+		A3B9907F16D5244600F614A4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B9907E16D5244600F614A4 /* Security.framework */; };
+		A3B9908316D5269500F614A4 /* RouteViewRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9908216D5269500F614A4 /* RouteViewRemote.m */; };
+		A3B9908616D5283C00F614A4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9908516D5283C00F614A4 /* Constants.m */; };
+		A3B9908916D52D4100F614A4 /* 55-network.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B9908716D52D4100F614A4 /* 55-network.png */; };
+		A3B9908A16D52D4100F614A4 /* 55-network@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B9908816D52D4100F614A4 /* 55-network@2x.png */; };
+		A3B9908D16D52D6B00F614A4 /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B9908B16D52D6B00F614A4 /* 07-map-marker.png */; };
+		A3B9908E16D52D6B00F614A4 /* 07-map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B9908C16D52D6B00F614A4 /* 07-map-marker@2x.png */; };
+		A3B9909116D52DA600F614A4 /* 74-location.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B9908F16D52DA600F614A4 /* 74-location.png */; };
+		A3B9909216D52DA600F614A4 /* 74-location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B9909016D52DA600F614A4 /* 74-location@2x.png */; };
+		A3B9909616D52F1100F614A4 /* RegionsTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9909516D52F1100F614A4 /* RegionsTableModel.m */; };
+		A3B9909E16D5385300F614A4 /* NiftySearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B9909916D5385300F614A4 /* NiftySearchView.m */; };
+		A3B9909F16D5385300F614A4 /* UISearchBarBookmarks.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B9909A16D5385300F614A4 /* UISearchBarBookmarks.png */; };
+		A3B990A016D5385300F614A4 /* UISearchBarBookmarks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B9909B16D5385300F614A4 /* UISearchBarBookmarks@2x.png */; };
+		A3B990A116D5385300F614A4 /* UISearchBarBookmarksPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B9909C16D5385300F614A4 /* UISearchBarBookmarksPressed.png */; };
+		A3B990A216D5385300F614A4 /* UISearchBarBookmarksPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B9909D16D5385300F614A4 /* UISearchBarBookmarksPressed@2x.png */; };
+		A3B990A616D5389E00F614A4 /* RouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B990A516D5389E00F614A4 /* RouteViewController.m */; };
+		A3B990A916D53AF900F614A4 /* RegionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B990A816D53AF900F614A4 /* RegionsViewController.m */; };
+		A3B990AD16D5462300F614A4 /* CamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B990AC16D5462300F614A4 /* CamsViewController.m */; };
+		A3B990B016D546B700F614A4 /* CamsCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B990AF16D546B700F614A4 /* CamsCollectionModel.m */; };
+		A3B990B216D549DE00F614A4 /* CamListingViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B990B116D549DE00F614A4 /* CamListingViewCell.xib */; };
+		A3B990B516D54A3A00F614A4 /* CamListingViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B990B416D54A3900F614A4 /* CamListingViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +86,6 @@
 		A390C11516D48A4D00A2CF1B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A390C11716D48A4D00A2CF1B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A390C11916D48A4D00A2CF1B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A390C12316D49C4500A2CF1B /* RegionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegionsViewController.h; path = UI/RegionsViewController.h; sourceTree = "<group>"; };
-		A390C12416D49C4500A2CF1B /* RegionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegionsViewController.m; path = UI/RegionsViewController.m; sourceTree = "<group>"; };
 		A390C12616D49C6E00A2CF1B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UI/Main.storyboard; sourceTree = "<group>"; };
 		A390C12816D49D8D00A2CF1B /* MainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainNavigationViewController.h; path = UI/MainNavigationViewController.h; sourceTree = "<group>"; };
 		A390C12916D49D8D00A2CF1B /* MainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainNavigationViewController.m; path = UI/MainNavigationViewController.m; sourceTree = "<group>"; };
@@ -88,6 +116,55 @@
 		A390C15516D4A01400A2CF1B /* NavigationBackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationBackgroundLayer.m; path = UI/NavigationBackgroundLayer.m; sourceTree = "<group>"; };
 		A390C15616D4A01400A2CF1B /* NavigationSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationSelectionView.h; path = UI/NavigationSelectionView.h; sourceTree = "<group>"; };
 		A390C15716D4A01400A2CF1B /* NavigationSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationSelectionView.m; path = UI/NavigationSelectionView.m; sourceTree = "<group>"; };
+		A3B9905C16D5229800F614A4 /* NSData+MKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MKBase64.h"; sourceTree = "<group>"; };
+		A3B9905D16D5229800F614A4 /* NSData+MKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MKBase64.m"; sourceTree = "<group>"; };
+		A3B9905E16D5229800F614A4 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		A3B9905F16D5229800F614A4 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		A3B9906016D5229800F614A4 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		A3B9906116D5229800F614A4 /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		A3B9906216D5229800F614A4 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		A3B9906316D5229800F614A4 /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		A3B9906416D5229800F614A4 /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		A3B9906516D5229800F614A4 /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		A3B9906816D5229800F614A4 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		A3B9906916D5229800F614A4 /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		A3B9906A16D5229800F614A4 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		A3B9906B16D5229800F614A4 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		A3B9906C16D5229800F614A4 /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		A3B9906E16D5229800F614A4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A3B9906F16D5229800F614A4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A3B9907A16D523D500F614A4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A3B9907C16D523DE00F614A4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A3B9907E16D5244600F614A4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A3B9908116D5269500F614A4 /* RouteViewRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RouteViewRemote.h; path = Remote/RouteViewRemote.h; sourceTree = "<group>"; };
+		A3B9908216D5269500F614A4 /* RouteViewRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RouteViewRemote.m; path = Remote/RouteViewRemote.m; sourceTree = "<group>"; };
+		A3B9908416D5283C00F614A4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A3B9908516D5283C00F614A4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		A3B9908716D52D4100F614A4 /* 55-network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "55-network.png"; path = "../../../../../Dropbox/iOS/GlyphishPro/icons/icons-gray/55-network.png"; sourceTree = "<group>"; };
+		A3B9908816D52D4100F614A4 /* 55-network@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "55-network@2x.png"; path = "../../../../../Dropbox/iOS/GlyphishPro/icons/icons-gray/55-network@2x.png"; sourceTree = "<group>"; };
+		A3B9908B16D52D6B00F614A4 /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "07-map-marker.png"; path = "../../../../../Dropbox/iOS/GlyphishPro/icons/icons-gray/07-map-marker.png"; sourceTree = "<group>"; };
+		A3B9908C16D52D6B00F614A4 /* 07-map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "07-map-marker@2x.png"; path = "../../../../../Dropbox/iOS/GlyphishPro/icons/icons-gray/07-map-marker@2x.png"; sourceTree = "<group>"; };
+		A3B9908F16D52DA600F614A4 /* 74-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "74-location.png"; path = "../../../../../Dropbox/iOS/GlyphishPro/icons/icons-gray/74-location.png"; sourceTree = "<group>"; };
+		A3B9909016D52DA600F614A4 /* 74-location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "74-location@2x.png"; path = "../../../../../Dropbox/iOS/GlyphishPro/icons/icons-gray/74-location@2x.png"; sourceTree = "<group>"; };
+		A3B9909416D52F1100F614A4 /* RegionsTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegionsTableModel.h; path = UI/Regions/RegionsTableModel.h; sourceTree = "<group>"; };
+		A3B9909516D52F1100F614A4 /* RegionsTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegionsTableModel.m; path = UI/Regions/RegionsTableModel.m; sourceTree = "<group>"; };
+		A3B9909816D5385300F614A4 /* NiftySearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NiftySearchView.h; sourceTree = "<group>"; };
+		A3B9909916D5385300F614A4 /* NiftySearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NiftySearchView.m; sourceTree = "<group>"; };
+		A3B9909A16D5385300F614A4 /* UISearchBarBookmarks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UISearchBarBookmarks.png; sourceTree = "<group>"; };
+		A3B9909B16D5385300F614A4 /* UISearchBarBookmarks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UISearchBarBookmarks@2x.png"; sourceTree = "<group>"; };
+		A3B9909C16D5385300F614A4 /* UISearchBarBookmarksPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UISearchBarBookmarksPressed.png; sourceTree = "<group>"; };
+		A3B9909D16D5385300F614A4 /* UISearchBarBookmarksPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UISearchBarBookmarksPressed@2x.png"; sourceTree = "<group>"; };
+		A3B990A416D5389E00F614A4 /* RouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RouteViewController.h; path = UI/Route/RouteViewController.h; sourceTree = "<group>"; };
+		A3B990A516D5389E00F614A4 /* RouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RouteViewController.m; path = UI/Route/RouteViewController.m; sourceTree = "<group>"; };
+		A3B990A716D53AF900F614A4 /* RegionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegionsViewController.h; path = UI/Regions/RegionsViewController.h; sourceTree = "<group>"; };
+		A3B990A816D53AF900F614A4 /* RegionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegionsViewController.m; path = UI/Regions/RegionsViewController.m; sourceTree = "<group>"; };
+		A3B990AB16D5462300F614A4 /* CamsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CamsViewController.h; path = Cams/CamsViewController.h; sourceTree = "<group>"; };
+		A3B990AC16D5462300F614A4 /* CamsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CamsViewController.m; path = Cams/CamsViewController.m; sourceTree = "<group>"; };
+		A3B990AE16D546B700F614A4 /* CamsCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CamsCollectionModel.h; path = Cams/CamsCollectionModel.h; sourceTree = "<group>"; };
+		A3B990AF16D546B700F614A4 /* CamsCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CamsCollectionModel.m; path = Cams/CamsCollectionModel.m; sourceTree = "<group>"; };
+		A3B990B116D549DE00F614A4 /* CamListingViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CamListingViewCell.xib; path = Cams/CamListingViewCell.xib; sourceTree = "<group>"; };
+		A3B990B316D54A3900F614A4 /* CamListingViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CamListingViewCell.h; path = Cams/CamListingViewCell.h; sourceTree = "<group>"; };
+		A3B990B416D54A3900F614A4 /* CamListingViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CamListingViewCell.m; path = Cams/CamListingViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +172,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B9907F16D5244600F614A4 /* Security.framework in Frameworks */,
+				A3B9907D16D523DE00F614A4 /* CFNetwork.framework in Frameworks */,
+				A3B9907B16D523D500F614A4 /* SystemConfiguration.framework in Frameworks */,
 				A390C15316D49F8800A2CF1B /* QuartzCore.framework in Frameworks */,
 				A390C10416D48A4D00A2CF1B /* UIKit.framework in Frameworks */,
 				A390C10616D48A4D00A2CF1B /* Foundation.framework in Frameworks */,
@@ -108,6 +188,12 @@
 		09A66EC716D4BDC9000851C0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A3B9908F16D52DA600F614A4 /* 74-location.png */,
+				A3B9909016D52DA600F614A4 /* 74-location@2x.png */,
+				A3B9908B16D52D6B00F614A4 /* 07-map-marker.png */,
+				A3B9908C16D52D6B00F614A4 /* 07-map-marker@2x.png */,
+				A3B9908716D52D4100F614A4 /* 55-network.png */,
+				A3B9908816D52D4100F614A4 /* 55-network@2x.png */,
 				09A66EC816D4BDC9000851C0 /* camera.jpeg */,
 			);
 			path = Assets;
@@ -144,10 +230,13 @@
 		A390C10216D48A4D00A2CF1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A390C15216D49F8800A2CF1B /* QuartzCore.framework */,
-				A390C10316D48A4D00A2CF1B /* UIKit.framework */,
-				A390C10516D48A4D00A2CF1B /* Foundation.framework */,
+				A3B9907C16D523DE00F614A4 /* CFNetwork.framework */,
 				A390C10716D48A4D00A2CF1B /* CoreGraphics.framework */,
+				A390C10516D48A4D00A2CF1B /* Foundation.framework */,
+				A390C15216D49F8800A2CF1B /* QuartzCore.framework */,
+				A3B9907E16D5244600F614A4 /* Security.framework */,
+				A3B9907A16D523D500F614A4 /* SystemConfiguration.framework */,
+				A390C10316D48A4D00A2CF1B /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,11 +244,14 @@
 		A390C10916D48A4D00A2CF1B /* RouteView */ = {
 			isa = PBXGroup;
 			children = (
+				A3B9908016D5267200F614A4 /* Remote */,
 				09A66EC716D4BDC9000851C0 /* Assets */,
 				A390C12016D4956700A2CF1B /* UI */,
 				A390C11216D48A4D00A2CF1B /* AppDelegate.h */,
 				A390C11316D48A4D00A2CF1B /* AppDelegate.m */,
 				A390C10A16D48A4D00A2CF1B /* Supporting Files */,
+				A3B9908416D5283C00F614A4 /* Constants.h */,
+				A3B9908516D5283C00F614A4 /* Constants.m */,
 			);
 			path = RouteView;
 			sourceTree = "<group>";
@@ -181,15 +273,16 @@
 		A390C12016D4956700A2CF1B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A390C12616D49C6E00A2CF1B /* Main.storyboard */,
+				A3B990AA16D5461300F614A4 /* Cams */,
+				A3B9909316D52EE200F614A4 /* Regions */,
+				A3B990A316D5387D00F614A4 /* Route */,
 				A390C15416D4A01400A2CF1B /* NavigationBackgroundLayer.h */,
 				A390C15516D4A01400A2CF1B /* NavigationBackgroundLayer.m */,
 				A390C15616D4A01400A2CF1B /* NavigationSelectionView.h */,
 				A390C15716D4A01400A2CF1B /* NavigationSelectionView.m */,
 				A390C14F16D49EEB00A2CF1B /* NavigationTabItem.h */,
 				A390C15016D49EEB00A2CF1B /* NavigationTabItem.m */,
-				A390C12616D49C6E00A2CF1B /* Main.storyboard */,
-				A390C12316D49C4500A2CF1B /* RegionsViewController.h */,
-				A390C12416D49C4500A2CF1B /* RegionsViewController.m */,
 				A390C12816D49D8D00A2CF1B /* MainNavigationViewController.h */,
 				A390C12916D49D8D00A2CF1B /* MainNavigationViewController.m */,
 				09A66EBF16D4B205000851C0 /* TrafficCamPickerViewController.h */,
@@ -261,10 +354,110 @@
 		A390C15A16D4A25400A2CF1B /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				A3B9909716D5385300F614A4 /* NiftySearchView */,
+				A3B9905816D5229800F614A4 /* MKNetworkKit */,
 				09A66ECA16D4E78E000851C0 /* IAInfiniteGridView */,
 				A390C12D16D49E4900A2CF1B /* JMTabView */,
 			);
 			name = Vendor;
+			sourceTree = "<group>";
+		};
+		A3B9905816D5229800F614A4 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				A3B9905916D5229800F614A4 /* Categories */,
+				A3B9906816D5229800F614A4 /* MKNetworkEngine.h */,
+				A3B9906916D5229800F614A4 /* MKNetworkEngine.m */,
+				A3B9906A16D5229800F614A4 /* MKNetworkKit.h */,
+				A3B9906B16D5229800F614A4 /* MKNetworkOperation.h */,
+				A3B9906C16D5229800F614A4 /* MKNetworkOperation.m */,
+				A3B9906D16D5229800F614A4 /* Reachability */,
+			);
+			name = MKNetworkKit;
+			path = vendor/MKNetworkKit/MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		A3B9905916D5229800F614A4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A3B9905C16D5229800F614A4 /* NSData+MKBase64.h */,
+				A3B9905D16D5229800F614A4 /* NSData+MKBase64.m */,
+				A3B9905E16D5229800F614A4 /* NSDate+RFC1123.h */,
+				A3B9905F16D5229800F614A4 /* NSDate+RFC1123.m */,
+				A3B9906016D5229800F614A4 /* NSDictionary+RequestEncoding.h */,
+				A3B9906116D5229800F614A4 /* NSDictionary+RequestEncoding.m */,
+				A3B9906216D5229800F614A4 /* NSString+MKNetworkKitAdditions.h */,
+				A3B9906316D5229800F614A4 /* NSString+MKNetworkKitAdditions.m */,
+				A3B9906416D5229800F614A4 /* UIAlertView+MKNetworkKitAdditions.h */,
+				A3B9906516D5229800F614A4 /* UIAlertView+MKNetworkKitAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A3B9906D16D5229800F614A4 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A3B9906E16D5229800F614A4 /* Reachability.h */,
+				A3B9906F16D5229800F614A4 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		A3B9908016D5267200F614A4 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				A3B9908116D5269500F614A4 /* RouteViewRemote.h */,
+				A3B9908216D5269500F614A4 /* RouteViewRemote.m */,
+			);
+			name = Remote;
+			sourceTree = "<group>";
+		};
+		A3B9909316D52EE200F614A4 /* Regions */ = {
+			isa = PBXGroup;
+			children = (
+				A3B990A716D53AF900F614A4 /* RegionsViewController.h */,
+				A3B990A816D53AF900F614A4 /* RegionsViewController.m */,
+				A3B9909416D52F1100F614A4 /* RegionsTableModel.h */,
+				A3B9909516D52F1100F614A4 /* RegionsTableModel.m */,
+			);
+			name = Regions;
+			sourceTree = "<group>";
+		};
+		A3B9909716D5385300F614A4 /* NiftySearchView */ = {
+			isa = PBXGroup;
+			children = (
+				A3B9909816D5385300F614A4 /* NiftySearchView.h */,
+				A3B9909916D5385300F614A4 /* NiftySearchView.m */,
+				A3B9909A16D5385300F614A4 /* UISearchBarBookmarks.png */,
+				A3B9909B16D5385300F614A4 /* UISearchBarBookmarks@2x.png */,
+				A3B9909C16D5385300F614A4 /* UISearchBarBookmarksPressed.png */,
+				A3B9909D16D5385300F614A4 /* UISearchBarBookmarksPressed@2x.png */,
+			);
+			name = NiftySearchView;
+			path = vendor/NiftySearchView;
+			sourceTree = "<group>";
+		};
+		A3B990A316D5387D00F614A4 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				A3B990A416D5389E00F614A4 /* RouteViewController.h */,
+				A3B990A516D5389E00F614A4 /* RouteViewController.m */,
+			);
+			name = Route;
+			sourceTree = "<group>";
+		};
+		A3B990AA16D5461300F614A4 /* Cams */ = {
+			isa = PBXGroup;
+			children = (
+				A3B990AB16D5462300F614A4 /* CamsViewController.h */,
+				A3B990AC16D5462300F614A4 /* CamsViewController.m */,
+				A3B990AE16D546B700F614A4 /* CamsCollectionModel.h */,
+				A3B990AF16D546B700F614A4 /* CamsCollectionModel.m */,
+				A3B990B116D549DE00F614A4 /* CamListingViewCell.xib */,
+				A3B990B316D54A3900F614A4 /* CamListingViewCell.h */,
+				A3B990B416D54A3900F614A4 /* CamListingViewCell.m */,
+			);
+			name = Cams;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +517,17 @@
 				A390C11A16D48A4D00A2CF1B /* Default-568h@2x.png in Resources */,
 				A390C12716D49C6E00A2CF1B /* Main.storyboard in Resources */,
 				09A66EC916D4BDC9000851C0 /* camera.jpeg in Resources */,
+				A3B9908916D52D4100F614A4 /* 55-network.png in Resources */,
+				A3B9908A16D52D4100F614A4 /* 55-network@2x.png in Resources */,
+				A3B9908D16D52D6B00F614A4 /* 07-map-marker.png in Resources */,
+				A3B9908E16D52D6B00F614A4 /* 07-map-marker@2x.png in Resources */,
+				A3B9909116D52DA600F614A4 /* 74-location.png in Resources */,
+				A3B9909216D52DA600F614A4 /* 74-location@2x.png in Resources */,
+				A3B9909F16D5385300F614A4 /* UISearchBarBookmarks.png in Resources */,
+				A3B990A016D5385300F614A4 /* UISearchBarBookmarks@2x.png in Resources */,
+				A3B990A116D5385300F614A4 /* UISearchBarBookmarksPressed.png in Resources */,
+				A3B990A216D5385300F614A4 /* UISearchBarBookmarksPressed@2x.png in Resources */,
+				A3B990B216D549DE00F614A4 /* CamListingViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +540,6 @@
 			files = (
 				A390C11016D48A4D00A2CF1B /* main.m in Sources */,
 				A390C11416D48A4D00A2CF1B /* AppDelegate.m in Sources */,
-				A390C12516D49C4500A2CF1B /* RegionsViewController.m in Sources */,
 				A390C12A16D49D8D00A2CF1B /* MainNavigationViewController.m in Sources */,
 				A390C14616D49E4900A2CF1B /* UIColor+Hex.m in Sources */,
 				A390C14716D49E4900A2CF1B /* UIView+InnerShadow.m in Sources */,
@@ -352,6 +555,23 @@
 				A390C15916D4A01400A2CF1B /* NavigationSelectionView.m in Sources */,
 				09A66EC116D4B205000851C0 /* TrafficCamPickerViewController.m in Sources */,
 				09A66ECD16D4E78E000851C0 /* IAInfiniteGridView.m in Sources */,
+				A3B9907116D5229800F614A4 /* NSData+MKBase64.m in Sources */,
+				A3B9907216D5229800F614A4 /* NSDate+RFC1123.m in Sources */,
+				A3B9907316D5229800F614A4 /* NSDictionary+RequestEncoding.m in Sources */,
+				A3B9907416D5229800F614A4 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				A3B9907516D5229800F614A4 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				A3B9907716D5229800F614A4 /* MKNetworkEngine.m in Sources */,
+				A3B9907816D5229800F614A4 /* MKNetworkOperation.m in Sources */,
+				A3B9907916D5229800F614A4 /* Reachability.m in Sources */,
+				A3B9908316D5269500F614A4 /* RouteViewRemote.m in Sources */,
+				A3B9908616D5283C00F614A4 /* Constants.m in Sources */,
+				A3B9909616D52F1100F614A4 /* RegionsTableModel.m in Sources */,
+				A3B9909E16D5385300F614A4 /* NiftySearchView.m in Sources */,
+				A3B990A616D5389E00F614A4 /* RouteViewController.m in Sources */,
+				A3B990A916D53AF900F614A4 /* RegionsViewController.m in Sources */,
+				A3B990AD16D5462300F614A4 /* CamsViewController.m in Sources */,
+				A3B990B016D546B700F614A4 /* CamsCollectionModel.m in Sources */,
+				A3B990B516D54A3A00F614A4 /* CamListingViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

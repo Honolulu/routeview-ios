@@ -1,3 +1,6 @@
 [submodule "vendor/JMTabView"]
 	path = vendor/JMTabView
 	url = git@github.com:jasonmorrissey/JMTabView.git
+[submodule "vendor/MKNetworkKit"]
+	path = vendor/MKNetworkKit
+	url = git@github.com:MugunthKumar/MKNetworkKit.git

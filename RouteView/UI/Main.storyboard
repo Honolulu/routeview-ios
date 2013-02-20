@@ -1,23 +1,124 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1qf-Jc-L80">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C2034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="yNY-f8-993">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="7U5-2r-i9g">
+        <!--Regions View Controller - Regions-->
+        <scene sceneID="6cZ-bG-EUH">
             <objects>
-                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="1qf-Jc-L80" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z6k-zA-x63">
+                <viewController id="7ZV-Yx-vyi" customClass="RegionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hwt-CJ-NEq">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xoG-t0-SyN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RegionCell" textLabel="Rgc-Yj-WMR" detailTextLabel="FBa-kd-cdx" style="IBUITableViewCellStyleSubtitle" id="roB-iF-5sN">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rgc-Yj-WMR">
+                                                    <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FBa-kd-cdx">
+                                                    <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="tf9-45-wAH" kind="push" identifier="PushTrafficCamsView" id="ksi-Gc-k46"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="AIa-kl-SVL" id="S0a-5Z-TTB"/>
+                                    <outlet property="delegate" destination="AIa-kl-SVL" id="ltF-GX-JcT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Regions" id="Bsw-0P-d5q"/>
+                    <navigationItem key="navigationItem" title="Regions" id="EwH-jJ-qUc"/>
+                    <connections>
+                        <outlet property="regionsTableModel" destination="AIa-kl-SVL" id="oKH-BR-jV2"/>
+                        <outlet property="regionsTableView" destination="xoG-t0-SyN" id="8Pv-5O-DT4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ohz-dZ-Nr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="AIa-kl-SVL" customClass="RegionsTableModel"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="-1043"/>
+        </scene>
+        <!--Navigation Controller - Regions-->
+        <scene sceneID="vDn-P7-jXh">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="uID-pX-dQ3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Regions" image="07-map-marker.png" id="OQi-ag-agA"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="KOy-yC-MSc">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="OpJ-cn-pOs" kind="relationship" relationship="rootViewController" id="OxA-9k-O6T"/>
+                        <segue destination="7ZV-Yx-vyi" kind="relationship" relationship="rootViewController" id="Blu-bj-yQs"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y1o-qP-C67" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWN-1s-BLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-419" y="52"/>
+            <point key="canvasLocation" x="-212" y="-1043"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8ph-bh-95P">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="yNY-f8-993" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="sTF-OW-MMb">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uID-pX-dQ3" kind="relationship" relationship="viewControllers" id="GgJ-jq-B88"/>
+                        <segue destination="aUM-b8-GbT" kind="relationship" relationship="viewControllers" id="g6i-jq-XnX"/>
+                        <segue destination="vek-gn-bX2" kind="relationship" relationship="viewControllers" id="RBf-wZ-fK9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlI-CH-M2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-637" y="-670"/>
+        </scene>
+        <!--Navigation Controller - Location-->
+        <scene sceneID="qzd-Ck-Ujp">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="vek-gn-bX2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Location" image="74-location.png" id="juK-Op-mOE"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="WKF-KZ-dOa">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EjZ-h9-y5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166" y="296"/>
         </scene>
         <!--Main Navigation View Controller-->
         <scene sceneID="QxB-jo-Rk5">
@@ -33,9 +134,94 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcR-c2-lPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="52"/>
+            <point key="canvasLocation" x="204" y="296"/>
         </scene>
-        <!--Traffic Cam Picker View Controller-->
+        <!--Navigation Controller - Route-->
+        <scene sceneID="uGQ-sO-inW">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="aUM-b8-GbT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Route" image="55-network.png" id="doJ-4e-1r6"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="yKj-WX-rbF">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EGA-IQ-QEk" kind="relationship" relationship="rootViewController" id="3DJ-e3-F23"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPE-DF-4oG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-212" y="-368"/>
+        </scene>
+        <!--Route View Controller-->
+        <scene sceneID="WKs-Vn-vef">
+            <objects>
+                <viewController id="EGA-IQ-QEk" customClass="RouteViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oHr-1I-8GA">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vj6-Ua-UWp"/>
+                    <connections>
+                        <segue destination="tf9-45-wAH" kind="push" identifier="PushTrafficCamsView" id="W1E-JB-KKn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBC-sn-1c1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="-368"/>
+        </scene>
+        <!--Cams View Controller-->
+        <scene sceneID="5V3-s5-PmF">
+            <objects>
+                <viewController id="tf9-45-wAH" customClass="CamsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uE1-nK-F43">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="O7T-lL-4JU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="w7e-Oe-JFg">
+                                    <size key="itemSize" width="148" height="111"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CamCell" id="xRq-fT-Kk2" customClass="CamListingViewCell">
+                                        <rect key="frame" x="5" y="5" width="148" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="148" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BnF-3U-dKT" id="9Zl-uB-ELO"/>
+                                    <outlet property="delegate" destination="BnF-3U-dKT" id="mp0-Z1-qYg"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QKy-Ti-KKM"/>
+                    <connections>
+                        <outlet property="camsCollectionModel" destination="BnF-3U-dKT" id="gms-L8-4cc"/>
+                        <outlet property="collectionView" destination="O7T-lL-4JU" id="zoq-Wd-T3c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Azh-GD-mfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="BnF-3U-dKT" customClass="CamsCollectionModel"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="-670"/>
+        </scene>
+        <!--Traffic Cam Picker View Controller - Item-->
         <scene sceneID="RMo-zC-eg0">
             <objects>
                 <viewController storyboardIdentifier="CamPicker" id="RA2-Fd-q85" customClass="TrafficCamPickerViewController" sceneMemberID="viewController">
@@ -68,6 +254,7 @@
                             </view>
                         </subviews>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="WRh-j1-Vje"/>
                     <navigationItem key="navigationItem" id="X3H-DC-zGp"/>
                     <connections>
                         <outlet property="gridView" destination="DfH-Kk-QpQ" id="a3J-S4-6Vt"/>
@@ -75,13 +262,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jh8-FD-PwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="388" y="52"/>
+            <point key="canvasLocation" x="628" y="296"/>
         </scene>
     </scenes>
     <resources>
+        <image name="07-map-marker.png" width="16" height="26"/>
+        <image name="55-network.png" width="24" height="24"/>
+        <image name="74-location.png" width="20" height="20"/>
         <image name="camera.jpeg" width="320" height="240"/>
     </resources>
     <classes>
+        <class className="CamListingViewCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CamListingViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="camImageActivityIndicatorView" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="camImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="CamsCollectionModel" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CamsCollectionModel.h"/>
+        </class>
+        <class className="CamsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CamsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="camsCollectionModel" candidateClass="CamsCollectionModel"/>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
         <class className="IAInfiniteGridView" superclassName="UIScrollView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IAInfiniteGridView.h"/>
             <relationships>
@@ -92,11 +299,33 @@
         <class className="MainNavigationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainNavigationViewController.h"/>
         </class>
+        <class className="RegionsTableModel" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RegionsTableModel.h"/>
+        </class>
+        <class className="RegionsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RegionsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="regionsTableModel" candidateClass="RegionsTableModel"/>
+                <relationship kind="outlet" name="regionsTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="RouteViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RouteViewController.h"/>
+        </class>
         <class className="TrafficCamPickerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TrafficCamPickerViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="gridView" candidateClass="IAInfiniteGridView"/>
             </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -104,4 +333,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="ksi-Gc-k46"/>
+    </inferredMetricsTieBreakers>
 </document>

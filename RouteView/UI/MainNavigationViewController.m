@@ -27,6 +27,10 @@
 {
   [super viewDidLoad];
 	// Do any additional setup after loading the view.
+  [self setupCustomTabs];
+}
+
+- (void)setupCustomTabs {
   JMTabView * tabView = [[JMTabView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 60., self.view.bounds.size.width, 60.)];
   tabView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
   
@@ -37,6 +41,14 @@
   
   NavigationTabItem * tabItem1 = [NavigationTabItem tabItemWithTitle:@"Regions" icon:standardIcon alternateIcon:highlightedIcon executeBlock:^{
     NSLog(@"tab 1");
+    
+    NSLog(@"Loading regions...");
+    RouteViewRemote *rvr = [RouteViewRemote sharedInstance];
+    [rvr regionsWithCompletion:^(NSDictionary *dictionary) {
+      NSLog(@"%@", dictionary);
+    } onError:^(NSError *error) {
+      NSLog(@"%@", error);
+    }];
   }];
   NavigationTabItem * tabItem2 = [NavigationTabItem tabItemWithTitle:@"Route" icon:standardIcon alternateIcon:highlightedIcon executeBlock:^{
     NSLog(@"tab 2");
@@ -46,7 +58,7 @@
     
     UIStoryboard *storyboard = self.storyboard;
     TrafficCamPickerViewController *tcp = [storyboard instantiateViewControllerWithIdentifier:@"CamPicker"];
-    [self presentViewController:tcp animated:YES completion:nil];
+    self.view = tcp.view;
   }];
   
   [tabView addTabItem:tabItem1];

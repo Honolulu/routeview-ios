@@ -1,11 +1,3 @@
-//
-//  TrafficCamPickerViewController.m
-//  RouteView
-//
-//  Created by Julie Ann Sakuda on 2/19/13.
-//  Copyright (c) 2013 Slickage. All rights reserved.
-//
-
 #import "TrafficCamPickerViewController.h"
 
 @interface TrafficCamPickerViewController ()
@@ -16,11 +8,11 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+  if (self) {
+    // Custom initialization
+  }
+  return self;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
@@ -31,18 +23,35 @@
   return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
   [super viewDidLoad];
+  [self.navigationController.navigationBar setHidden:NO];
 	// Do any additional setup after loading the view.
   [_gridView setPaging:YES];
   [_gridView setCircular:YES];
+  
+  [self loadCameras];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)loadCameras {
+  NSLog(@"Region: %@", _region);
+  if (_region) {
+    RouteViewRemote *rvr = [RouteViewRemote sharedInstance];
+    [rvr camsForRegion:_region onCompletion:^(NSDictionary *dictionary) {
+      NSLog(@"Cameras for %@: %@", _region, dictionary);
+    } onError:^(NSError *error) {
+      NSLog(@"Error loading cameras for %@", _region);
+    }];
+  }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+  [self.navigationController.navigationBar setHidden:NO];
+}
+
+- (void)didReceiveMemoryWarning {
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 - (UIView *)infiniteGridView:(IAInfiniteGridView *)gridView forIndex:(NSInteger)gridIndex {

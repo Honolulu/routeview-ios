@@ -3,6 +3,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
   return YES;
 }
 
