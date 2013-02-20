@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A66EC116D4B205000851C0 /* TrafficCamPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A66EC016D4B205000851C0 /* TrafficCamPickerViewController.m */; };
+		09A66EC916D4BDC9000851C0 /* camera.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 09A66EC816D4BDC9000851C0 /* camera.jpeg */; };
+		09A66ECD16D4E78E000851C0 /* IAInfiniteGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A66ECC16D4E78E000851C0 /* IAInfiniteGridView.m */; };
 		A390C10416D48A4D00A2CF1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A390C10316D48A4D00A2CF1B /* UIKit.framework */; };
 		A390C10616D48A4D00A2CF1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A390C10516D48A4D00A2CF1B /* Foundation.framework */; };
 		A390C10816D48A4D00A2CF1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A390C10716D48A4D00A2CF1B /* CoreGraphics.framework */; };
@@ -35,6 +38,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09A66EBF16D4B205000851C0 /* TrafficCamPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrafficCamPickerViewController.h; path = UI/TrafficCamPickerViewController.h; sourceTree = "<group>"; };
+		09A66EC016D4B205000851C0 /* TrafficCamPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrafficCamPickerViewController.m; path = UI/TrafficCamPickerViewController.m; sourceTree = "<group>"; };
+		09A66EC816D4BDC9000851C0 /* camera.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera.jpeg; sourceTree = "<group>"; };
+		09A66ECB16D4E78E000851C0 /* IAInfiniteGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAInfiniteGridView.h; sourceTree = "<group>"; };
+		09A66ECC16D4E78E000851C0 /* IAInfiniteGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAInfiniteGridView.m; sourceTree = "<group>"; };
 		A390C10016D48A4D00A2CF1B /* RouteView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A390C10316D48A4D00A2CF1B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A390C10516D48A4D00A2CF1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +105,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09A66EC716D4BDC9000851C0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				09A66EC816D4BDC9000851C0 /* camera.jpeg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		09A66ECA16D4E78E000851C0 /* IAInfiniteGridView */ = {
+			isa = PBXGroup;
+			children = (
+				09A66ECB16D4E78E000851C0 /* IAInfiniteGridView.h */,
+				09A66ECC16D4E78E000851C0 /* IAInfiniteGridView.m */,
+			);
+			name = IAInfiniteGridView;
+			path = vendor/IAInfiniteGridView;
+			sourceTree = "<group>";
+		};
 		A390C0F716D48A4D00A2CF1B = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +155,7 @@
 		A390C10916D48A4D00A2CF1B /* RouteView */ = {
 			isa = PBXGroup;
 			children = (
+				09A66EC716D4BDC9000851C0 /* Assets */,
 				A390C12016D4956700A2CF1B /* UI */,
 				A390C11216D48A4D00A2CF1B /* AppDelegate.h */,
 				A390C11316D48A4D00A2CF1B /* AppDelegate.m */,
@@ -165,6 +192,8 @@
 				A390C12416D49C4500A2CF1B /* RegionsViewController.m */,
 				A390C12816D49D8D00A2CF1B /* MainNavigationViewController.h */,
 				A390C12916D49D8D00A2CF1B /* MainNavigationViewController.m */,
+				09A66EBF16D4B205000851C0 /* TrafficCamPickerViewController.h */,
+				09A66EC016D4B205000851C0 /* TrafficCamPickerViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -232,6 +261,7 @@
 		A390C15A16D4A25400A2CF1B /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				09A66ECA16D4E78E000851C0 /* IAInfiniteGridView */,
 				A390C12D16D49E4900A2CF1B /* JMTabView */,
 			);
 			name = Vendor;
@@ -293,6 +323,7 @@
 				A390C11816D48A4D00A2CF1B /* Default@2x.png in Resources */,
 				A390C11A16D48A4D00A2CF1B /* Default-568h@2x.png in Resources */,
 				A390C12716D49C6E00A2CF1B /* Main.storyboard in Resources */,
+				09A66EC916D4BDC9000851C0 /* camera.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +350,8 @@
 				A390C15116D49EEB00A2CF1B /* NavigationTabItem.m in Sources */,
 				A390C15816D4A01400A2CF1B /* NavigationBackgroundLayer.m in Sources */,
 				A390C15916D4A01400A2CF1B /* NavigationSelectionView.m in Sources */,
+				09A66EC116D4B205000851C0 /* TrafficCamPickerViewController.m in Sources */,
+				09A66ECD16D4E78E000851C0 /* IAInfiniteGridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

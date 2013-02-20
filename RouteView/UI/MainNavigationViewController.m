@@ -43,6 +43,10 @@
   }];
   NavigationTabItem * tabItem3 = [NavigationTabItem tabItemWithTitle:@"Location" icon:standardIcon alternateIcon:highlightedIcon executeBlock:^{
     NSLog(@"tab 3");
+    
+    UIStoryboard *storyboard = self.storyboard;
+    TrafficCamPickerViewController *tcp = [storyboard instantiateViewControllerWithIdentifier:@"CamPicker"];
+    [self presentViewController:tcp animated:YES completion:nil];
   }];
   
   [tabView addTabItem:tabItem1];
